@@ -1,6 +1,7 @@
 import React, {
   ComponentClass,
   FunctionComponent,
+  MouseEvent,
   PropsWithChildren,
   useState,
 } from 'react';
@@ -12,6 +13,8 @@ const useModal = (): [boolean, () => void] => {
   const [show, setShow] = useState(false);
   return [show, () => setShow(!show)];
 };
+
+const stop = (ev: MouseEvent) => ev.stopPropagation();
 
 interface TygrComponentProps {
   name: string;
@@ -29,7 +32,7 @@ export default function TygrComponent(
 
   return (
     <div className="tygr-component" onClick={toggleModal}>
-      <div className="header">
+      <div className="header" onClick={stop}>
         <h3>{name}</h3>
         <a href={demo} target="_blank">
           Demo
