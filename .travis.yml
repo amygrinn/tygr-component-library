@@ -6,11 +6,12 @@ node_js: lts/*
 script:
   - npm run quality:check
   - NODE_ENV=production npm run build
-# deploy:
-#   - provider: pages
-#     on:
-#       branch: main
-#       repo: tylergrinn/tygr-component-library
-#     edge: true
-#     github_token: $GITHUB_TOKEN
-#     local_dir: dist
+
+deploy:
+  - provider: pages
+    on:
+      branch: main
+      repo: tylergrinn/tygr-component-library
+    edge: true
+    github_token: $GITHUB_TOKEN
+    local_dir: dist
