@@ -1,6 +1,6 @@
-import Header from '@tygr/header';
 import Logo from '@tygr/logo';
 import React from 'react';
+import Contact from './components/Contact';
 import Login from './components/Login';
 import TygrComponent from './components/TygrComponent';
 
@@ -58,10 +58,10 @@ export default function App() {
       </TygrComponent>
 
       <TygrComponent
-        name="@tygr/header"
-        demo="https://tylergrinn.github.io/tygr-header"
-        repo="https://github.com/tylergrinn/tygr-header"
-        component={Header}
+        name="@tygr/contact"
+        demo="https://tylergrinn.github.io/tygr-contact"
+        repo="https://github.com/tylergrinn/tygr-contact"
+        component={Contact}
       >
         <p>
           I recreated the github and twitter follow buttons in pure css so I
