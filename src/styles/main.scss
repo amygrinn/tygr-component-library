@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'components/modal';
+@import 'components/login';
+@import '@tygr/header/sass';
+@import '@tygr/logo/sass';
+
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+
+#app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#app > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50vw;
+}
+
+h1 {
+  font-family: Sansita Swashed, cursive;
+  text-align: center;
+}
+
+p,
+h3 {
+  font-family: 'Piazzolla', serif;
+}
+
+.tygr-logo h3 {
+  display: none;
+}
+
+.tygr-component {
+  border: 2px solid rgb(200, 200, 200);
+  margin: 8px;
+  padding: 8px;
+  border-bottom-right-radius: 32px;
+  border-top-left-radius: 32px;
+
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    margin: 8px;
+    color: unset;
+  }
+
+  &:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #app > .container {
+    max-width: 90vw;
+  }
+}

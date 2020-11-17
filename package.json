@@ -1,13 +1,7 @@
 {
-  "name": "@tygr/logo",
-  "version": "2.0.0",
-  "description": "Logo for tygr",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib",
-    "sass"
-  ],
+  "name": "@tygr/component-library",
+  "version": "0.0.0",
+  "description": "Component library for tygr",
   "browserslist": [
     "defaults"
   ],
@@ -42,31 +36,19 @@
       ]
     },
     "ignorePatterns": [
-      "lib/*",
       "dist/*",
-      "webpack.config.js",
-      "html-webpack-exclude-tags-plugin.js"
+      "webpack.config.js"
     ]
   },
   "prettier": {
     "singleQuote": true
   },
   "scripts": {
-    "clean": "rimraf lib dist",
-    "ts": "tsc",
-    "ts:w": "npm run ts -- -w",
-    "sass": "sass -I node_modules --style=compressed --no-source-map sass/index.scss lib/tygr-logo.min.css",
-    "sass:w": "npm run sass -- --watch",
-    "webpack": "webpack",
-    "webpack:w": "npm run webpack -- -w",
-    "plugin": "run-p ts sass webpack",
-    "plugin:w": "run-p ts:w sass:w webpack:w",
-    "demo": "webpack --config demo/webpack.config",
-    "demo:w": "npm run demo -- -w",
-    "build": "run-s clean plugin demo",
-    "serve": "http-server lib",
-    "reload": "reload -d dist -b",
-    "start": "npm-run-all build -p plugin:w demo:w reload",
+    "build": "webpack",
+    "build:w": "npm run build -- -w",
+    "serve": "http-server dist",
+    "reload": "reload -b -d dist",
+    "start": "npm-run-all build -p build:w reload",
     "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "lint": "npm run lint:fix",
@@ -79,53 +61,55 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tylergrinn/tygr-logo.git"
+    "url": "https://github.com/tylergrinn/tygr-component-library.git"
   },
   "keywords": [
     "react",
-    "login",
-    "webpack"
+    "component",
+    "library"
   ],
   "author": "Tyler Grinn",
   "license": "ISC",
-  "dependencies": {
-    "react": "16"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.11.6",
+    "@babel/core": "^7.12.3",
     "@babel/plugin-transform-runtime": "^7.12.1",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
     "@babel/runtime": "^7.12.5",
-    "@types/react": "^16.9.49",
+    "@tygr/header": "^2.0.2",
+    "@tygr/logo": "^2.0.1",
+    "@tygr/tabs": "^2.0.2",
+    "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
-    "@typescript-eslint/eslint-plugin": "^4.2.0",
-    "@typescript-eslint/parser": "^4.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.0",
+    "@typescript-eslint/parser": "^4.8.0",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.1.0",
-    "copy-webpack-plugin": "^6.2.1",
+    "babel-loader": "^8.2.1",
+    "clean-webpack-plugin": "^3.0.0",
     "copyfiles": "^2.4.0",
     "css-loader": "^4.3.0",
-    "eslint": "^7.9.0",
-    "eslint-config-alloy": "^3.8.0",
-    "eslint-plugin-react": "^7.21.2",
+    "eslint": "^7.13.0",
+    "eslint-config-alloy": "^3.8.2",
+    "eslint-plugin-react": "^7.21.5",
     "html-webpack-plugin": "^4.5.0",
     "jsdom": "^16.4.0",
-    "mini-css-extract-plugin": "^0.11.2",
-    "nodemon": "^2.0.4",
+    "mini-css-extract-plugin": "^0.11.3",
+    "nodemon": "^2.0.6",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
     "prettier-plugin-organize-imports": "^1.1.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "reload": "^3.1.1",
     "rimraf": "^3.0.2",
-    "sass": "^1.26.11",
-    "sass-loader": "^10.0.2",
-    "style-loader": "^1.2.1",
-    "typescript": "^4.0.3",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^1.3.0",
+    "typescript": "^4.0.5",
     "webpack": "^5.4.0",
     "webpack-cli": "^3.3.12",
-    "webpack-merge": "^5.1.4"
+    "webpack-dev-server": "^3.11.0"
   }
 }

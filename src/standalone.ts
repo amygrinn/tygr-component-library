@@ -1,9 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Logo from './Logo';
+import ComponentLibrary from '../lib/standalone';
+import '../lib/tygr-component-library.min.css';
 
-export default {
-  mount: (el: Element | DocumentFragment | null) => {
-    ReactDOM.render(React.createElement(Logo), el);
-  },
-};
+ComponentLibrary.mount(document.getElementById('app'));
