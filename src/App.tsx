@@ -1,7 +1,7 @@
+import { Login } from '@tygr/auth';
 import Logo from '@tygr/logo';
 import React from 'react';
 import Contact from './components/Contact';
-import Login from './components/Login';
 import TygrComponent from './components/TygrComponent';
 
 export default function App() {
@@ -54,6 +54,19 @@ export default function App() {
           Really neat use of react hooks and sass mixins. It strikes me
           there&apos;s more to say about how to use the code than there is code.
           The entire codebase is just 2 files: index.ts and _index.scss.
+        </p>
+        <p>A good usage example is the @tygr/auth component below</p>
+      </TygrComponent>
+
+      <TygrComponent
+        name="@tygr/auth"
+        demo="https://tylergrinn.github.io/tygr-auth"
+        repo="https://github.com/tylergrinn/tygr-auth"
+        component={Login}
+      >
+        <p>
+          Login component for tygr. Allows local authentication as well as
+          federated providers.
         </p>
       </TygrComponent>
 

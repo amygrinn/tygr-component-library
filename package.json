@@ -71,6 +71,7 @@
   "author": "Tyler Grinn",
   "license": "ISC",
   "dependencies": {
+    "@tygr/auth": "^1.0.0",
     "@tygr/contact": "^1.0.0"
   },
   "devDependencies": {
@@ -81,7 +82,6 @@
     "@babel/preset-typescript": "^7.12.1",
     "@babel/runtime": "^7.12.5",
     "@tygr/logo": "^2.0.1",
-    "@tygr/tabs": "^2.0.2",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
     "@typescript-eslint/eslint-plugin": "^4.8.0",
