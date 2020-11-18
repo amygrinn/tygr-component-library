@@ -71,7 +71,7 @@
   "author": "Tyler Grinn",
   "license": "ISC",
   "dependencies": {
-    "@tygr/auth": "^1.0.0",
+    "@tygr/auth": "^1.0.1",
     "@tygr/contact": "^1.0.0"
   },
   "devDependencies": {
