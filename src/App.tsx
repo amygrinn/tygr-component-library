@@ -10,7 +10,7 @@ export default function App() {
       <Logo />
       <h1>TyGr Component Library</h1>
 
-      <h3>I would like for you to make your own react component library</h3>
+      <h3>I would like you to make your own react component library</h3>
 
       <p>
         I&apos;ve tried to make this library as readable as possible, needing as
@@ -65,7 +65,7 @@ export default function App() {
       >
         <p>
           I recreated the github and twitter follow buttons in pure css so I
-          wouldn&apos;t need to download their javscript files.
+          wouldn&apos;t need to download their javascript files.
         </p>
       </TygrComponent>
     </div>
