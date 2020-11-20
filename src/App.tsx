@@ -1,4 +1,4 @@
-import { Login } from '@tygr/auth';
+import Auth from '@tygr/auth';
 import Logo from '@tygr/logo';
 import React from 'react';
 import Contact from './components/Contact';
@@ -45,10 +45,10 @@ export default function App() {
       </TygrComponent>
 
       <TygrComponent
-        name="@tygr/tabs"
-        demo="https://tylergrinn.github.io/tygr-tabs"
-        repo="https://github.com/tylergrinn/tygr-tabs"
-        component={Login}
+        name="@tygr/switch"
+        demo="https://tylergrinn.github.io/tygr-switch"
+        repo="https://github.com/tylergrinn/tygr-switch"
+        component={Auth}
       >
         <p>
           Really neat use of react hooks and sass mixins. It strikes me
@@ -62,7 +62,7 @@ export default function App() {
         name="@tygr/auth"
         demo="https://tylergrinn.github.io/tygr-auth"
         repo="https://github.com/tylergrinn/tygr-auth"
-        component={Login}
+        component={Auth}
       >
         <p>
           Login component for tygr. Allows local authentication as well as

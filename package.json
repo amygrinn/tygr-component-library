@@ -71,8 +71,10 @@
   "author": "Tyler Grinn",
   "license": "ISC",
   "dependencies": {
-    "@tygr/auth": "^1.0.1",
-    "@tygr/contact": "^1.0.0"
+    "@tygr/auth": "^1.0.2",
+    "@tygr/contact": "^1.0.0",
+    "@tygr/logo": "^3.0.0",
+    "@tygr/switch": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -81,7 +83,6 @@
     "@babel/preset-react": "^7.12.5",
     "@babel/preset-typescript": "^7.12.1",
     "@babel/runtime": "^7.12.5",
-    "@tygr/logo": "^2.0.1",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
     "@typescript-eslint/eslint-plugin": "^4.8.0",
