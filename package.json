@@ -47,7 +47,7 @@
     "build": "webpack",
     "build:w": "npm run build -- -w",
     "serve": "http-server dist",
-    "reload": "reload -b -d dist",
+    "reload": "reload -b -d dist -p 8081",
     "start": "npm-run-all build -p build:w reload",
     "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
@@ -71,7 +71,7 @@
   "author": "Tyler Grinn",
   "license": "ISC",
   "dependencies": {
-    "@tygr/auth": "^1.0.2",
+    "@tygr/auth": "^1.1.1",
     "@tygr/contact": "^1.0.0",
     "@tygr/logo": "^3.0.0",
     "@tygr/switch": "^1.0.0"

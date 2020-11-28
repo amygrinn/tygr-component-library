@@ -48,7 +48,7 @@ export default function App() {
         name="@tygr/switch"
         demo="https://tylergrinn.github.io/tygr-switch"
         repo="https://github.com/tylergrinn/tygr-switch"
-        component={Auth}
+        component={() => <Auth github twitter google />}
       >
         <p>
           Really neat use of react hooks and sass mixins. It strikes me
@@ -62,7 +62,7 @@ export default function App() {
         name="@tygr/auth"
         demo="https://tylergrinn.github.io/tygr-auth"
         repo="https://github.com/tylergrinn/tygr-auth"
-        component={Auth}
+        component={() => <Auth github twitter google />}
       >
         <p>
           Login component for tygr. Allows local authentication as well as
